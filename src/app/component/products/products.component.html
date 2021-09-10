@@ -1,0 +1,39 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Premium')">
+                <img src="data:image/png;base64,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" alt="">
+                <h6>Premium</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Tamilnadu')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWN9wydXTRP1D_h8bMLTs0lg0BFT0ZFsdGHsVdk6j57eyTzigs88Nsn7jmAZWHoLIno3E&usqp=CAU" alt="">
+                <h6>Tamilnadu</h6>
+            </a>
+            </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory | filter:searchKey:'title'">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.p_name}}</h5>
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">${{item.p_cost}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.p_details}}</p>
+                <button type="button" class="btn" ><i class="fa fa-plus" (click)="inc(item)"></i></button>
+                <span>{{item.p_qnt}}</span>
+                <button type="button" class="btn" ><i class="fa fa-minus" (click)="dec(item)"></i></button>
+                <button class="btn btn-outline-primary">Add to cart</button>
+            </div>
+        </ng-container>
+
+    </div>
+</div>
